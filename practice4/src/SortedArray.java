@@ -4,7 +4,7 @@ public class SortedArray {
     private int[] data;
 
     public SortedArray(int[] inputArray) {
-        data = new int[inputArray.length];
+        data = inputArray.clone();
         Arrays.sort(data);
     }
 
